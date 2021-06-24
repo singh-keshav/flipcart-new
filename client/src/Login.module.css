@@ -1,0 +1,122 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.loginPopUp {
+  display: flex;
+  height: 528px;
+  width: 605px;
+  /* flex: 0 0 700px; */
+  background-color: yellow;
+}
+
+.loginContainer_left {
+  background-color: rgb(96, 96, 240);
+  padding: 30px;
+  width: 270px;
+  color: white;
+  text-align: left;
+  position: relative;
+  pointer-events: none;
+  cursor: default;
+}
+
+.loginContainer_right {
+  background-color: white;
+  padding: 56px 35px 16px 35px;
+  flex: 0 2 335px;
+  position: relative ;
+}
+.loginContainer_left_heading {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+  font-family: Roboto, Arial, sans-serif;
+}
+.loginContainer_left_img {
+  position: absolute;
+  bottom: 0px;
+}
+.loginContainer_right_input {
+  border: none;
+  font-size: 15px;
+  /* margin-bottom: 34px; */
+}
+/* .loginContainer_right_input::before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 50%;
+
+  transform: scale(0);
+  bottom: 1px;
+  position: absolute;
+  will-change: transform;
+
+  transition: transform 0.2s ease;
+} */
+
+.loginContainer_right_input {
+  border: none;
+  width: 100%;
+  height: 60px;
+}
+/* .loginContainer_right_input:focus{
+  border:none;
+} */
+
+.loginContainer_right_input_placeholder {
+  position: absolute;
+  top: 40px;
+  /* z-index: -1; */
+}
+.loginContainer_right_input_underline {
+  height: 1px;
+  /* content: " "; */
+  background-color: grey;
+  width: 100%;
+  transition: all 30ms linear;
+  transform: scale(0, 1);
+}
+.loginContainer_right_input:focus + .loginContainer_right_input_underline {
+  background-color: blue;
+  width: 100%;
+  transform: scale(1);
+
+  transition-duration: 300ms;
+}
+.loginContainer_right_termsAndCondition {
+  font-size: 10px;
+  text-align: left;
+  color: #878787;
+  list-style: none;
+  margin-top: 30px;
+}
+.loginContainer_right_Login {
+  text-decoration: none;
+  padding: none;
+  border: none;
+  background-color: #fb641b;
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+.loginContainer_right_switch{
+  color: blue;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
